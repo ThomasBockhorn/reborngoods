@@ -21,6 +21,7 @@ add_action('wp_enqueue_scripts', 'custom_css');
 function theme_features()
 {
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
+    register_nav_menu('footerMenu', 'Footer Menu');
 }
 add_action('after_setup_theme', 'theme_features');
 
@@ -30,4 +31,12 @@ function woocommerce_support()
     add_theme_support('woocommerce');
 }
 add_action('after_setup_theme', 'woocommerce_support');
+
+/*This function will add HTML5 features*/
+add_theme_support('html5', array(
+    'comment-list',
+    'comment-form',
+    'search-form'
+))
 ?>
+

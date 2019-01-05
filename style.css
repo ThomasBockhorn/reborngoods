@@ -65,7 +65,7 @@ li {
 
 /*Landing page jumbotron styling*/
 #landing_page_jumbotron {
-    background: white;
+    background: rgb(238, 237, 237);
     border: 1px solid black;
 }
 
@@ -81,4 +81,9 @@ li {
 #featured-image {
     width: 25em;
     height: 25em;
+}
+
+/*footer styling  */
+#footer {
+    background-color: white;
 }
