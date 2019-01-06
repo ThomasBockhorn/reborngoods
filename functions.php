@@ -37,6 +37,13 @@ add_theme_support('html5', array(
     'comment-list',
     'comment-form',
     'search-form'
-))
+));
+
+function change_on_sale_badge()
+{
+    $sale_badge = '<span style="background:crimson; color: white; padding: 5px;">Reduced!</span>';
+    return $sale_badge;
+};
+add_filter('woocommerce_sale_flash', 'change_on_sale_badge');
 ?>
 

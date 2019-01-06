@@ -30,6 +30,17 @@ a:hover {
     text-decoration: none;
 }
 
+.navbar-form {
+    width: 25em;
+    margin: 0;
+}
+
+.form-group {
+    width: 20em;
+    margin: 0;
+    padding-right: 1em;
+}
+
 li {
     list-style-type: none;
 }
@@ -63,10 +74,15 @@ li {
     display: block;
 }
 
+.menu {
+    margin-left: 55em;
+}
+
 /*Landing page jumbotron styling*/
 #landing_page_jumbotron {
     background: rgb(238, 237, 237);
     border: 1px solid black;
+    margin-top: 5em;
 }
 
 #landing_page_jumbotron #heading {
