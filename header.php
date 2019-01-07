@@ -22,8 +22,7 @@
                 <div class="form-group container">
                   <div class="row">
                     <div class="lg-col-6">
-                      <!--<input type="text" class="form-control lg-col-6" placeholder="Search">-->
-                      <?php get_product_search_form(); ?>
+                        <?php get_product_search_form(); ?>  
                     </div>
                     <div class="lg-col-6">
                       <button id="search-button" type="submit" class="btn btn-primary lg-col-6">Submit</button>
