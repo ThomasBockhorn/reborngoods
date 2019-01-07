@@ -39,11 +39,29 @@ add_theme_support('html5', array(
     'search-form'
 ));
 
+/*Adding a sales badge*/
 function change_on_sale_badge()
 {
     $sale_badge = '<span style="background:crimson; color: white; padding: 5px;">Reduced!</span>';
     return $sale_badge;
 };
 add_filter('woocommerce_sale_flash', 'change_on_sale_badge');
+
+/**
+ * Filter WooCommerce  Search Field
+ *
+ */
+function me_custom_product_searchform($form)
+{
+
+    $form = '<form role="search" method="get" id="searchform" action="' . esc_url(home_url('/')) . '">
+                    <div>
+                        <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . __('Search products...', 'woocommerce') . '" />                           
+                        <input type="hidden" name="post_type" value="product" />
+                    </div>
+                </form>';
+    return $form;
+}
+add_filter('get_product_search_form', 'me_custom_product_searchform');
 ?>
 

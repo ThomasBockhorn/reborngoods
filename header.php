@@ -16,22 +16,31 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <form class="navbar-form navbar-right container">
-          <div class="row">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-           </div>
-        </form>
-      <form class="menu">
-        <?php
-        wp_nav_menu(array(
-          'theme_location' => 'headerMenuLocation',
-          'menu_class' => 'navbar-nav',
-        ));
-        ?>
-      </form>
+      <div class="container">
+        <div class="row">
+            <form class="col-md-5 col-sm-12">
+                <div class="form-group container">
+                  <div class="row">
+                    <div class="lg-col-6">
+                      <!--<input type="text" class="form-control lg-col-6" placeholder="Search">-->
+                      <?php get_product_search_form(); ?>
+                    </div>
+                    <div class="lg-col-6">
+                      <button id="search-button" type="submit" class="btn btn-primary lg-col-6">Submit</button>
+                    </div>
+                  </div>
+              </div>
+            </form>
+            <form class="menu col-md-6 col-sm-12">
+              <?php
+              wp_nav_menu(array(
+                'theme_location' => 'headerMenuLocation',
+                'menu_class' => 'navbar-nav',
+              ));
+              ?>
+          </form>
+        </div>
+      </div>  
     </div>   
   </div>
 </nav>

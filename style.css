@@ -31,14 +31,14 @@ a:hover {
 }
 
 .navbar-form {
-    width: 25em;
+    width: 50em;
     margin: 0;
 }
 
 .form-group {
-    width: 20em;
     margin: 0;
     padding-right: 1em;
+    padding-top: .5em;
 }
 
 li {
@@ -74,8 +74,8 @@ li {
     display: block;
 }
 
-.menu {
-    margin-left: 55em;
+#search-button {
+    margin-left: 1em;
 }
 
 /*Landing page jumbotron styling*/
@@ -102,4 +102,43 @@ li {
 /*footer styling  */
 #footer {
     background-color: white;
+}
+
+/*Shop page  */
+.shopstyle {
+    padding: 5em;
+}
+
+/* Woo Search */
+
+.widget_product_search {
+    overflow: auto;
+}
+
+.widget_product_search input[type="search"],
+.widget_product_search input[type="submit"] {
+    border-radius: 0;
+    padding: 6px;
+}
+
+.widget_product_search input[type="search"] {
+    width: 200px;
+    float: left;
+    padding: 5px;
+}
+
+.widget_product_search form[role="search"] {
+    float: left;
+}
+
+.widget_product_search input[type="submit"] {
+    float: left;
+    font-size: 1em;
+}
+
+.widget_product_search input[type="submit"]:hover,
+.widget_product_search input[type="submit"]:focus {
+    background: #57ad68;
+    border: #fff 1px solid;
+    color: #000;
 }
