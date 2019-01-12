@@ -78,6 +78,19 @@ li {
     margin-left: 1em;
 }
 
+#navbarNav {
+    padding-bottom: 1em;
+}
+
+#search_field {
+    padding-top: .25em;
+}
+
+#menu_group {
+    padding-top: .25em;
+    margin-left: 5.75em;
+}
+
 /*Landing page jumbotron styling*/
 #landing_page_jumbotron {
     background: rgb(253, 249, 249);

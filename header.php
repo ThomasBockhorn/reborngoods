@@ -21,7 +21,7 @@
             <form class="col-md-5 col-sm-12">
                 <div class="form-group container" id="search_form_group">
                   <div class="row">
-                    <div class="lg-col-6">
+                    <div class="lg-col-6" id="search_field">
                         <?php get_product_search_form(); ?>  
                     </div>
                     <div class="lg-col-6" id="search-button">
@@ -30,7 +30,7 @@
                   </div>
               </div>
             </form>
-            <form class="menu col-md-6 col-sm-12">
+            <form class="menu col-md-6 col-sm-12" id="menu_group">
               <?php
               wp_nav_menu(array(
                 'theme_location' => 'headerMenuLocation',
