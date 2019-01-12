@@ -142,3 +142,28 @@ li {
     border: #fff 1px solid;
     color: #000;
 }
+
+/*Sold Out badge*/
+.now_sold {
+    background: #000080;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*Checkout form styles*/
+div.col-1 {
+    max-width: 100%;
+}
+
+div.col-2 {
+    max-width: 100%;
+}
+
+#order_comments {
+    width: 19em;
+}

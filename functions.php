@@ -47,21 +47,43 @@ function change_on_sale_badge()
 };
 add_filter('woocommerce_sale_flash', 'change_on_sale_badge');
 
-/**
- * Filter WooCommerce  Search Field
- *
- */
+/*Filter WooCommerce  Search Field*/
 function me_custom_product_searchform($form)
 {
-
     $form = '<form role="search" method="get" id="searchform" action="' . esc_url(home_url('/')) . '">
-                    <div>
-                        <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . __('Search products...', 'woocommerce') . '" />                           
-                        <input type="hidden" name="post_type" value="product" />
-                    </div>
-                </form>';
+            <div>
+                <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . __('Search products...', 'woocommerce') . '" />                           
+                <input type="hidden" name="post_type" value="product" />
+            </div>
+        </form>';
     return $form;
 }
 add_filter('get_product_search_form', 'me_custom_product_searchform');
+
+/*Sold out badge */
+function sold_out_badge()
+{
+    global $product;
+    if (!$product->is_in_stock()) {
+        echo '<span class="now_sold">Sold Out</span>';
+    }
+};
+add_action('woocommerce_before_shop_loop_item_title', 'sold_out_badge');
+
+/* Add classes to form fields*/
+function addBootstrapToCheckoutFields($fields)
+{
+    foreach ($fields as &$fieldset) {
+        foreach ($fieldset as &$field) {
+            // if you want to add the form-group class around the label and the input
+            $field['class'][] = 'form-group'; 
+
+            // add form-control to the actual input
+            $field['input_class'][] = 'form-control';
+        }
+    }
+    return $fields;
+}
+add_filter('woocommerce_checkout_fields', 'addBootstrapToCheckoutFields');
 ?>
 
