@@ -167,3 +167,26 @@ div.col-2 {
 #order_comments {
     width: 19em;
 }
+
+button,
+#place_order {
+    background-color: blue;
+    color: white;
+}
+
+#billing_first_name_field,
+#billing_last_name_field,
+#shipping_first_name_field,
+#shipping_last_name_field {
+    width: 100%;
+}
+
+#billing_address_2_field,
+#shipping_address_2_field {
+    margin-left: 7.4em;
+}
+
+#select2-billing_state-container,
+#select2-shipping_state-container {
+    width: 8em;
+}
