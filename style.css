@@ -218,3 +218,14 @@ div .woocommerce {
 #order_review_heading {
     margin-top: 2em;
 }
+
+/*Styling Cart */
+.woocommerce a.button,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled] {
+    color: black !important;
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    font-weight: 100px !important;
+}
