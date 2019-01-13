@@ -6,6 +6,11 @@ Version: 1.0.0
 Description: This is a theme for Reborn Goods vintage clothing estore
 */
 
+html,
+body {
+    font-family: 'Old Standard TT', serif;
+}
+
 /*Page styling */
 html {
     margin: 0 !important;
@@ -93,9 +98,9 @@ li {
 
 /*Landing page jumbotron styling*/
 #landing_page_jumbotron {
-    background: rgb(253, 249, 249);
     border: 1px solid black;
     margin-top: 5em;
+    background-color: white;
 }
 
 #landing_page_jumbotron #heading {
@@ -181,10 +186,12 @@ div.col-2 {
     width: 19em;
 }
 
-button,
+#search-button,
 #place_order {
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 #billing_first_name_field,

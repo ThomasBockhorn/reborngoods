@@ -96,5 +96,13 @@ function updated_shipping_form($fields)
     return $fields;
 }
 add_filter('woocommerce_checkout_fields', 'updated_shipping_form');
+
+/*This function displays google fonts */
+function google_fonts()
+{
+    wp_enqueue_style("googlefonts", "//fonts.googleapis.com/css?family=Old+Standard+TT");
+}
+add_action('wp_enqueue_scripts', "google_fonts");
+
 ?>
 
