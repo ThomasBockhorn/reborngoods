@@ -88,7 +88,7 @@ li {
 }
 
 #search_field {
-    padding-top: .25em;
+    padding-top: .5em;
 }
 
 #menu_group {
@@ -209,4 +209,12 @@ div.col-2 {
 #select2-billing_state-container,
 #select2-shipping_state-container {
     width: 8em;
+}
+
+div .woocommerce {
+    margin-top: 2em;
+}
+
+#order_review_heading {
+    margin-top: 2em;
 }

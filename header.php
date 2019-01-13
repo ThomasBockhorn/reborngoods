@@ -19,18 +19,19 @@
       <div class="container">
         <div class="row">
             <form class="col-md-5 col-sm-12">
-                <div class="form-group container" id="search_form_group">
+                <div class="form-group container">
                   <div class="row">
-                    <div class="lg-col-6" id="search_field">
-                        <?php get_product_search_form(); ?>  
+                    <div class="lg-col-6">
+                        <?php 
+                        get_product_search_form(); ?>  
                     </div>
-                    <div class="lg-col-6" id="search-button">
-                      <button type="submit" class="btn lg-col-6">Submit</button>
+                    <div class="lg-col-6">
+                      <button id="search-button" type="submit" class="btn lg-col-6">Submit</button>
                     </div>
                   </div>
               </div>
             </form>
-            <form class="menu col-md-6 col-sm-12" id="menu_group">
+            <form class="menu col-md-6 col-sm-12">
               <?php
               wp_nav_menu(array(
                 'theme_location' => 'headerMenuLocation',
