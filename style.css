@@ -42,7 +42,6 @@ a:hover {
 
 .form-group {
     margin: 0;
-    padding-right: 1em;
     padding-top: 1em;
 }
 
@@ -88,12 +87,20 @@ li {
 }
 
 #search_field {
-    padding-top: .5em;
+    padding-top: .2em;
 }
 
 #menu_group {
     padding-top: .25em;
     margin-left: 5.75em;
+}
+
+#search-group {
+    margin-right: 5em;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
 }
 
 /*Landing page jumbotron styling*/
@@ -219,13 +226,17 @@ div .woocommerce {
     margin-top: 2em;
 }
 
-/*Styling Cart */
+/*Styling buttons */
 .woocommerce a.button,
 .woocommerce button.button:disabled,
-.woocommerce button.button:disabled[disabled] {
+.woocommerce button.button:disabled[disabled],
+button.single_add_to_cart_button,
+input#submit,
+button.button {
     color: black !important;
     border: 1px solid black !important;
     border-radius: 5px !important;
     background-color: white !important;
-    font-weight: 100px !important;
+    font-weight: 100 !important;
+    opacity: 1 !important;
 }

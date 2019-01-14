@@ -13,15 +13,15 @@
 <nav class="navbar navbar-expand-lg">
   <a id="home" class="navbar-brand" href="<?php echo site_url('/home') ?>"><?php echo get_bloginfo('name') ?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="container">
         <div class="row">
-            <form class="col-md-5 col-sm-12">
+            <form class="col-md-5 col-sm-12" id="search-group">
                 <div class="form-group container">
                   <div class="row">
-                    <div class="lg-col-6">
+                    <div class="lg-col-6" id="search_field">
                         <?php 
                         get_product_search_form(); ?>  
                     </div>
