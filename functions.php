@@ -49,7 +49,7 @@ add_theme_support('html5', array(
 /*Adding a sales badge*/
 function change_on_sale_badge()
 {
-    $sale_badge = '<span style="background:crimson; color: white; padding: 5px;">Reduced!</span>';
+    $sale_badge = '<span class="on-sale">Reduced!</span>';
     return $sale_badge;
 };
 add_filter('woocommerce_sale_flash', 'change_on_sale_badge');

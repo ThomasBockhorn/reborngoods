@@ -11,6 +11,10 @@ body {
     font-family: 'Old Standard TT', serif;
 }
 
+/*Different viewports*/
+
+
+
 /*Page styling */
 html {
     margin: 0 !important;
@@ -104,8 +108,6 @@ li {
 }
 
 button.navbar-toggler {
-    width: 75px;
-    height: 75px;
     background-color: transparent;
     outline: none;
 }
@@ -130,6 +132,58 @@ i.fa-bars {
 
 #heading {
     text-align: center;
+}
+
+/*media queries*/
+@media screen and (min-width: 320px) {
+    .navbar-toggler {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .navbar-toggler {
+        margin-left: 7em;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .navbar-toggler {
+        margin-left: 7em;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .navbar-toggler {
+        margin-left: 9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-toggler {
+        margin-left: 27em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #featured-image {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    #featured-image {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    #featured-image {
+        width: 8em;
+        height: 8em;
+    }
 }
 
 /*Landing page image*/
@@ -193,6 +247,19 @@ i.fa-bars {
     right: 0;
     top: 0;
 }
+
+/*Sale badge*/
+.on-sale {
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 
 /*Checkout form styles*/
 div.col-1 {

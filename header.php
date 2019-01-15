@@ -11,10 +11,13 @@
 <header>
 <!--Header for reborngoods theme-->
 <nav class="navbar navbar-expand-lg">
-  <a id="home" class="navbar-brand" href="<?php echo site_url('/home') ?>"><?php echo get_bloginfo('name') ?></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a id="home" class="navbar-brand" href="<?php echo site_url('/home') ?>"><?php echo get_bloginfo('name') ?></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="container">
         <div class="row">
@@ -31,7 +34,7 @@
                   </div>
               </div>
             </form>
-            <form class="menu col-md-6 col-sm-12" id="navigation_menu">
+            <form class="menu col-md-5 col-sm-12" id="navigation_menu">
               <?php
               wp_nav_menu(array(
                 'theme_location' => 'headerMenuLocation',
