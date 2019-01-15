@@ -99,8 +99,22 @@ li {
     margin-right: 5em;
 }
 
-.navbar-toggler-icon {
-    background-color: white;
+#navigation_menu {
+    padding-top: .5em;
+}
+
+button.navbar-toggler {
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    outline: none;
+}
+
+i.fa-bars {
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
 }
 
 /*Landing page jumbotron styling*/

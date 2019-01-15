@@ -10,6 +10,13 @@ function bootstrap_script()
 }
 add_action('wp_enqueue_scripts', 'bootstrap_script');
 
+//This will get font awesome
+function font_awesome()
+{
+    wp_enqueue_style('font_awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css');
+}
+add_action('wp_enqueue_scripts', 'font_awesome');
+
 //This will add the custom css
 function custom_css()
 {
@@ -104,5 +111,13 @@ function google_fonts()
 }
 add_action('wp_enqueue_scripts', "google_fonts");
 
+/*This function modifies the my account navigation bar*/
+function modify_my_account_navigation($menu_links)
+{
+    unset($menu_links['downloads']);
+    unset($menu_links['dashboard']);
+    return $menu_links;
+}
+add_filter('woocommerce_account_menu_items', 'modify_my_account_navigation');
 ?>
 
