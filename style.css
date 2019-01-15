@@ -186,6 +186,12 @@ i.fa-bars {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    #search-group {
+        margin-right: 0;
+    }
+}
+
 /*Landing page image*/
 #featured-image {
     width: 25em;
