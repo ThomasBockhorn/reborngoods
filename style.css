@@ -165,37 +165,10 @@ i.fa-bars {
     }
 }
 
-@media screen and (max-width: 360px) {
-    #featured-image {
-        width: 10em;
-        height: 10em;
-    }
-}
-
-@media screen and (min-width: 411px) {
-    #featured-image {
-        width: 10em;
-        height: 10em;
-    }
-}
-
-@media screen and (min-width: 375px) {
-    #featured-image {
-        width: 8em;
-        height: 8em;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     #search-group {
         margin-right: 0;
     }
-}
-
-/*Landing page image*/
-#featured-image {
-    width: 25em;
-    height: 25em;
 }
 
 /*footer styling  */

@@ -15,7 +15,7 @@
     <div class="col-lg-12 text-center" data-profile="<?php echo $loop->post->ID; ?>">
         <?php $featured_image = wp_get_attachment_image_src(get_post_thumbnail_id($loop->post->ID)); ?>
         <?php if ($featured_image) { ?>
-        <img id="featured-image" src="<?php echo $featured_image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
+        <img class="img-responsive" id="featured-image" src="<?php echo $featured_image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
         <?php 
       } ?>
     </div>
