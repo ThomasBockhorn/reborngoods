@@ -2,13 +2,21 @@
 //This will add the bootstrap needed for the theme
 function bootstrap_script()
 {
-    wp_enqueue_style('bootstrap_css', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
-    wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.3.1.slim.min.js', array('jquery'));
+    wp_enqueue_style('bootstrap_css', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');;
     wp_enqueue_script('popperjs', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array('popper'));
     wp_enqueue_script('bootstrap_js', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'));
-
 }
 add_action('wp_enqueue_scripts', 'bootstrap_script');
+
+function my_init()
+{
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', false, '1.11.0', true);
+        wp_enqueue_script('jquery');
+    }
+}
+add_action('init', 'my_init');  
 
 //This will get font awesome
 function font_awesome()

@@ -21,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="container">
         <div class="row">
-          <form class="menu col-md-6 col-sm-12" id="navigation_menu">
+          <form class="menu col-md-12 col-sm-12" id="navigation_menu">
             <?php
             wp_nav_menu(array(
               'theme_location' => 'headerMenuLocation',

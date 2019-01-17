@@ -161,12 +161,6 @@ i.fa-bars {
     }
 }
 
-@media screen and (min-width: 1024px) {
-    #search-group {
-        margin-right: 0;
-    }
-}
-
 /*footer styling  */
 #footer {
     background-color: white;
