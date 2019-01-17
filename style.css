@@ -99,12 +99,8 @@ li {
     margin-left: 5.75em;
 }
 
-#search-group {
-    margin-right: 5em;
-}
-
 #navigation_menu {
-    padding-top: .5em;
+    padding-top: 1em;
 }
 
 button.navbar-toggler {
