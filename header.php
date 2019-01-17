@@ -34,7 +34,7 @@
                   </div>
               </div>
             </form>
-            <form class="menu col-md-7 col-sm-12" id="navigation_menu">
+            <form class="menu col-md-6 col-sm-12" id="navigation_menu">
               <?php
               wp_nav_menu(array(
                 'theme_location' => 'headerMenuLocation',
